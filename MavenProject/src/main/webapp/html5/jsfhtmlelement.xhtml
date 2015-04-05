@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+        <title>JSF With HTML 5 (Pass-through elements)</title>
+        <h:outputStylesheet library="html" name="html.css" />
+    </h:head>
+    <h:body>
+        <h:messages />
+        <h:form id="mhsForm">
+            
+            <h:panelGrid columns="2">
+                <h:outputLabel for="nama" value="NAMA" />
+                <h:inputText id="nama" value="#{customer.nama}" p:placeholder="Masukkan Nama" />
+                
+                <h:selectOneRadio
+                
+                <h:outputLabel for="alamat" value="ALAMAT" />
+                <h:inputText id="alamat" value="#{customer.alamat}" p:placeholder="Masukkan Alamat" />
+            </h:panelGrid>
+            
+        </h:form>
+    </h:body>
+</html>
+

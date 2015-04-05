@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:jsf="http://xmlns.jcp.org/jsf">
+
+    <head jsf:id="head">
+        <title>JSF With HTML 5</title>
+        <link jsf:library="html" jsf:name="html.css" rel="stylesheet" 
+              type="text/css" href="../resources/html/html.css" />
+    </head>
+
+    <body jsf:id="body">
+        <form jsf:prependId="false">
+            <table style="border-spacing: 0; border-collapse: collapse">
+                <tr>
+                    <td>
+                        <label jsf:for="npm">NPM</label>
+                    </td>
+                    <td>
+                        <input type="text" jsf:id="npm" jsf:value="#{mhs.npm}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label jsf:for="nama">NAMA</label>
+                    </td>
+                    <td>
+                        <input type="text" jsf:id="nama" jsf:value="#{mhs.nama}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label jsf:for="angkatan">ANGKATAN</label>
+                    </td>
+                    <td>
+                        <input type="text" jsf:id="angkatan" jsf:value="#{mhs.angkatan}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" jsf:action="konfirmasi" value="SIMPAN" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+
+</html>
+
